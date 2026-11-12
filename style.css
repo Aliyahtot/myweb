@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #100A24;
+    color: white;
+}
+
+/* NAVIGATION */
+header {
+    background: #1B1140;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #B88CFF;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #F94FC1;
+}
+
+/* HOME SECTION */
+.home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    color: #B88CFF;
+}
+
+.home-content h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.home-content h2 {
+    font-size: 20px;
+    color: #F94FC1;
+}
+
+.home-content p {
+    margin: 20px 0;
+    line-height: 1.8;
+    color: #D4CBEA;
+}
+
+.home-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #9B5DE5;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #7B2FF7, #F94FC1);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* GENERAL SECTIONS */
+.section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 30px;
+    color: #B88CFF;
+    margin-bottom: 35px;
+}
+
+/* ABOUT */
+.about-content {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+    color: #D4CBEA;
+}
+
+/* CARDS */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #1B1140;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #493276;
+    border-bottom: 4px solid aqua;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: lightgreen;
+    background: purple;
+}
+
+.card h3 {
+    color: #F94FC1;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #D4CBEA;
+    line-height: 1.7;
+}
+
+/* CONTACT */
+.contact-info {
+    line-height: 2.5;
+    color: #D4CBEA;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1B1140;
+    color: #D4CBEA;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE PHONE */
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .home {
+        padding: 40px 7%;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content h2 {
+        font-size: 16px;
+    }
+
+    .home-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section {
+        padding: 50px 7%;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        font-size: 11px;
+    }
+}
